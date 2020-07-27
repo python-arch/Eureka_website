@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  position: relative;
+  scroll-behavior: smooth;
+}
+i {
+  color: #fff;
+}
+.container {
+  position: absolute;
+  top: 80px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  margin-left: 70px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+}
+.container h3 {
+  font-family: "Lobster", cursive;
+  transition: all 700ms ease-in;
+}
+.container h3:hover {
+  transform: scale(0.98);
+}
+
+.arrow {
+  color: #333;
+  float: right;
+  position: relative;
+  bottom: 27px;
+  transition: all 700ms ease-in-out;
+}
+
+.arrow:hover {
+  transform: scale(0.9);
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
+.card-container {
+  display: inline-flex;
+}
+
+.card:first-child {
+  margin-left: -40px;
+}
+.card {
+  position: relative;
+  top: 10px;
+  margin: 0 5px 0 5px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.1);
+}
+.card img {
+  filter: blur(0.5px);
+}
+.card img:hover {
+  filter: blur(0px);
+}
+.boundary {
+  border: rgba(0, 0, 0, 0.9);
+  color: #000;
+  height: 2px;
+  z-index: 22;
+  width: 100%;
+}
+#announce,
+#calendar {
+  margin-top: 30px;
+}
+.calendar-container {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+i.calendar {
+  font-size: 250px;
+  color: #555;
+  opacity: 0.1;
+}
+.bg-darkk {
+  background: #333;
+  color: #f4f4f4;
+}

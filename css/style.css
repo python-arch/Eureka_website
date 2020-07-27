@@ -1,0 +1,243 @@
+html {
+  scroll-behavior: smooth;
+  background: rgba(0, 0, 0, 0.9);
+}
+body {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.background {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assests/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;
+}
+.background:hover {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.background:hover .content {
+  filter: blur(13px);
+  -webkit-filter: blur(13px);
+}
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 35%;
+  width: 400px;
+  height: 350px;
+  text-align: center;
+  transition: all 1s;
+}
+.navbar {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+.content .logo {
+  padding: 7px;
+  border: 2px #fff solid;
+  font-size: 45px;
+  font-style: italic;
+  text-shadow: 2px;
+  color: rgba(236, 236, 236, 0.945);
+  margin-bottom: 8px;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-bottom: 20px;
+}
+.content .title {
+  font-size: 20px;
+  color: rgba(236, 236, 236, 0.945);
+
+  margin-bottom: 20px;
+}
+.content .text {
+  list-style: none;
+  display: flex;
+  width: 70%;
+  align-self: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content .text li {
+  margin-right: 4px;
+}
+.content .text .active {
+  background-color: #fff;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+section,
+footer {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.grid-3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.center {
+  margin: auto;
+  text-align: center;
+}
+.bg-lightt {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-darkk {
+  background: #333;
+  color: #f4f4f4;
+}
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.social-container {
+  padding: 13px;
+  float: right;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.social-container i {
+  font-size: 20px;
+  padding: 5px;
+}
+footer {
+  padding: 2.2rem;
+}
+
+footer p {
+  margin: 0;
+}
+#write {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.write {
+  position: relative;
+  left: 110%;
+}
+/*meduim screens*/
+
+@media (max-width: 1007px) {
+  .content {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 30%;
+    margin-right: 20px;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    transition: all 1s;
+  }
+}
+@media (max-width: 640px) {
+  .content {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 18%;
+    margin-right: 20px;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    transition: all 1s;
+  }
+  .content .logo {
+    font-size: 40px;
+    padding: 4px;
+  }
+  .content .title {
+    font-size: 16px;
+    color: rgba(236, 236, 236, 0.945);
+
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 570px) {
+  .content {
+    top: 30%;
+    left: 10%;
+    margin-right: 20px;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    transition: all 1s;
+  }
+  .content .logo {
+    font-size: 35px;
+    padding: 0px;
+  }
+  .content .title {
+    font-size: 14px;
+    color: rgba(236, 236, 236, 0.945);
+
+    margin-bottom: 20px;
+  }
+  section,
+  footer {
+    font-size: 10px;
+  }
+  section h3 {
+    font-size: 14px;
+  }
+}
+
+.services div a {
+  color: #fff;
+}
+.services div i {
+  margin-bottom: 13px;
+}
+@media (max-width: 480px) {
+  .content {
+    top: 40%;
+    margin-left: -20px;
+    width: 400px;
+    height: 350px;
+    text-align: center;
+    transition: all 1s;
+  }
+  .content .logo {
+    font-size: 25px;
+    border: none;
+    padding: 0px;
+  }
+  .content .title {
+    font-size: 16px;
+    color: rgba(236, 236, 236, 0.945);
+
+    margin-bottom: 20px;
+  }
+  .content .text {
+    display: none;
+  }
+  section,
+  footer {
+    font-size: 10px;
+  }
+  section h3 {
+    font-size: 14px;
+  }
+  .write {
+    font-size: 10px;
+  }
+}

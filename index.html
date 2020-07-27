@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eureka website</title>
+    <link href="./css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap//bootstrap-4.5.0-dist//css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe/dist/gumshoe.polyfills.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0dbdfb5e18.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="showcase" id="header">
+      <div class="content">
+        <p class="logo">Eureka Team</p>
+        <div class="title">
+          Welcome to Eureka website
+        </div>
+        <ul class="text">
+          <li>
+            <a class="btn btn-outline-light link active" href="#home">Home</a>
+          </li>
+          <li>
+            <a class="btn btn-outline-light link" href="#write">Articles</a>
+          </li>
+          <li><a class="btn btn-outline-light link" href="#about">About</a></li>
+
+          <li>
+            <a class="btn btn-outline-light link" href="./profile.html"
+              >Profile</a
+            >
+          </li>
+          <li>
+            <a
+              class="btn btn-outline-light link"
+              href="./login.html"
+              target="self"
+              >Join</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!--Nav bar-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+      id="navbar"
+    >
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-atom fa-2x"></i>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0" class="search">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+            id="search"
+          />
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Contact us <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="background"></div>
+
+    <!--Services-->
+    <section class="services" id="write">
+      <div class="container grid-3 center">
+        <div>
+          <i class="fas fa-blog fa-3x"></i>
+          <h3><a href="./Articles.html">Latest post</a></h3>
+          <p>stay up to date with the lastest articles and posts</p>
+        </div>
+        <div>
+          <i class="fas fa-bullhorn fa-3x"></i>
+          <h3><a href="./Articles.html">Announcements</a></h3>
+          <p>follow tthe latests announcements</p>
+        </div>
+        <div>
+          <i class="fas fa-calendar-week fa-3x"></i>
+          <h3><a href="./Articles.html">Calendar</a></h3>
+          <p>see your Calendar and be up to date with new posts</p>
+        </div>
+        <div id="write-div">
+          <a href="./Articles.html" class="center btn btn-outline-light write"
+            >write an article</a
+          >
+        </div>
+      </div>
+    </section>
+    <!--About -->
+    <section class="about bg-lightt" id="about">
+      <div class="container">
+        <div class="grid-2">
+          <div class="center">
+            <i class="fas fa-users-cog fa-10x"></i>
+          </div>
+          <div>
+            <h3>
+              About us
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              ipsum totam quaerat facere voluptates nostrum eum consequuntur?
+              Repellendus, quos, eum magnam consequatur voluptate vitae delectus
+              expedita esse at enim vel?
+            </p>
+            <div class="social-container">
+              <i class="fab fa-facebook"></i>
+              <i class="fas fa-envelope-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="center bg-darkk">
+      <p id="footerP">Eureka Team &copy; 2020</p>
+    </footer>
+    <script scr="./js/main.js"></script>
+  </body>
+</html>
